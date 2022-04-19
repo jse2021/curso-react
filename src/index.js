@@ -1,7 +1,24 @@
+// version 17.
+// import React from 'react';
+// import ReactDOM from 'react-dom';
+// //import PrimeraApp from './PrimeraApp';
+// import CounterApp from './CounterApp';
+// import './index.css';
+
+// const divRoot = document.querySelector('#root');
+
+// ReactDOM.render(<CounterApp value={10}/>,divRoot);
+
+
+
+//version 18
 import React from 'react';
-import ReactDOM from 'react-dom';
-const saludo = <h1>Hola mundo</h1>;
+import { createRoot } from 'react-dom/client';
+//import PrimeraApp from './PrimeraApp';
+import CounterApp from './CounterApp';
+import './index.css';
 
 const divRoot = document.querySelector('#root');
+const root = createRoot(divRoot);
+root.render(<CounterApp value={10}/>);
 
-ReactDOM.render(saludo,divRoot);
