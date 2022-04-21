@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 const CounterApp = ({value=10})=>{
     //handleAdd
     const [counter,setCounter] = useState(value);
+    
     const handleAdd = (e)=>{
         //setCounter(counter+1)
         setCounter( (c)=>c+1);
